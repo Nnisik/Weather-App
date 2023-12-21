@@ -1,7 +1,11 @@
 # Weather App
-# About
-# APIs
+## About
+### APIs
+* [a link](https://www.weatherapi.com) - Weather API
 
-# Features
+### Features
+* 
 
-# Build with
+### Build with
+* ES6
+* React Native
