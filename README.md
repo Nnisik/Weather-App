@@ -1,7 +1,7 @@
 # Weather App
 ## About
 ### APIs
-* [https:/https://www.weatherapi.com]/www.weatherapi.com) - Weather API
+* [https://www.weatherapi.com]/www.weatherapi.com) - Weather API
 
 ### Features
 * 
