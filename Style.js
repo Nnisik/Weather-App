@@ -1,18 +1,19 @@
 import { StyleSheet } from "react-native";
 
+const colors = {
+    "bg": "#FCF6F5",
+    "fg": "#2BAE66",
+};
+
 const styles = StyleSheet.create({
-    container: {
-        justifyContent: "space-between",
-        flexDirection: "column",
-        backgroundColor: "#fafaff",
-        height: 850,
-    },
-    gradient: {
-        gradient: ""
+    container: { 
+        marginTop:25, 
+        alignItems:"center", 
+        flex:1, 
+        backgroundColor: colors["bg"] 
     },
     topPanel: {
         alignItems: "center",
-        marginTop: 100,
     },
     todayWeatherContainer: {
         flexDirection: "row",
@@ -20,17 +21,17 @@ const styles = StyleSheet.create({
     todayWeather: {
         fontSize: 150,
         fontWeight: "bold",
-        color: "#30343f"
+        color: colors["fg"],
     },
     todayWeatherDecor: {
         fontSize: 80,
         fontWeight: "bold",
-        color: "#30343f"
+        color: colors["fg"],
     },
     todayWeatherInfo: {
         fontSize: 17,
         letterSpacing: 1,
-        color: "#30343f"
+        textAlign: "center"
     },
     bottomPanel: {
         alignItems: "center",
@@ -38,7 +39,8 @@ const styles = StyleSheet.create({
     extraInfo: {
         width: 350,
         borderRadius: 20,
-        backgroundColor: "#e4d9ff",
+        borderColor: colors['fg'],
+        borderWidth: 2,
         alignItems: "center",
         textAlign: "center",
     },
@@ -54,7 +56,7 @@ const styles = StyleSheet.create({
         textAlign: "center",
         justifyContent: "space-between",
         letterSpacing: 2,
-        color: "#30343f"
+        color: colors['fg'],
     },
     margin: {
         marginVertical: 10
@@ -63,11 +65,11 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
     },
     tableHeader: {
-        borderBottomColor: "#273469",
+        borderBottomColor: colors['fg'],
         borderBottomWidth: 2,
     },
     tableHeaderText: {
-        fontSize: 18,
+        fontSize: 24,
         fontWeight: "bold",
         color: "#1e2749"
     },
@@ -75,15 +77,17 @@ const styles = StyleSheet.create({
         width: 330,
         flexDirection: "row",
         justifyContent: "space-between",
+        textAlignVertical: "center",
         paddingVertical: 10,
+        fontSize: 18
     },
     forecastDay: {
         fontSize: 15,
         color: "#1e2749"
     },
     forecastImage: {
-        height: 30,
-        width: 30,
+        height: 40,
+        width: 40,
     },
     forecastRowLeft: {
         flexDirection: "row",
